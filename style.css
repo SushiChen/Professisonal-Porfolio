@@ -1,21 +1,24 @@
+/* Website background color is lightblue */
 body {
     background-color: lightblue;
 }
-
+/* list color is inline */
 li {
     display: inline;
-    color: white;
 }
-
+/* List a tags are white*/
 a {
     color: white;
 }
-
+/* All section headers are black and centered */
 h2 {
     color: black;
     text-align: center;
 } 
-
+/* Header has padding of 20 pixels background of dark cyan
+   font family Georgia, 'Times New Roman', Times, serif
+   text color white. Flex wrap allow for it to drop a row after screen size changes
+   space beetween allows for space between the text */
 .header {
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -33,11 +36,13 @@ h2 {
     justify-content: space-between;
     width: 100%;
 }
+/* header h1 is inline-block and also has a font size of 30 pixels */
 .header h1 {
     display: inline-block;
     font-size: 30px;
 }
-
+/* side bar has a width of 5 pixels background color of dark cyan and also height is auto
+   margin to the left 5 pixels and tom the right 40 pixels  */
 .bar {
     width: 5px;
     background-color: darkcyan;
@@ -54,11 +59,14 @@ h2 {
     width: 100%;
     margin: 20px;
 }
-
+/* section header with verticle height of 20 */
 .section-header {
     width:20vh;
-    
 }
+/* nav bar with a padding of 20 pixels 
+    floats to the right and font size of 25 pixels
+    font family of Georgia, 'Times New Roman', Times, serif
+    text color white and a width of 60%  */
 .nav 
 {
     padding: 20px;
@@ -68,7 +76,7 @@ h2 {
     color: white;
     width: 60%;
 }
-
+/* paragraph width of 80% and also text color of black */
 .paragraph {
     width: 80%;
     color: black
@@ -80,7 +88,9 @@ h2 {
     width: 80%;
     flex-wrap: wrap;
 }
-
+/* Projects have 100% width and verticle height of 25, opacity of 50%
+background size cover, margin to the right 20 pixels, border style groove,
+border color white and border width is thick */
 .project {
     width: 100%;
     height: 25vh;
@@ -96,7 +106,7 @@ h2 {
 .project:hover {
     opacity: 100%;
 }
-
+/* Allows for background images through url also image height is 50*/
 #code-refractor {
     background-image: url("pexels-alex-conchillos-3745234.jpg");
     height: 50vh;
@@ -113,19 +123,19 @@ h2 {
     padding: 10px;
 
 }
-
+/* Allows for background images through url */
 #project2 {
     background-image: url("pexels-carlos-oliva-3586966.jpg");
 }
-
+/* Allows for background images through url */
 #project3 {
     background-image: url("pexels-gdtography-911738.jpg");
 }
-
+/* Allows for background images through url */
 #project4 {
     background-image: url("pexels-markus-spiske-1089438.jpg");
 }
-
+/* Allows for background images through url */
 #project5 {
     background-image: url("pexels-roberto-nickson-2559941.jpg");
 }
@@ -146,7 +156,7 @@ h2 {
     justify-content: space-evenly;
     width : 80%
 }
-
+/* media query for any with a max size of 1024 pixels */
 @media screen and (max-width: 1024px ) {
     .paragraph { font-size: large;}
     .project { height: 12.5vh;}
@@ -157,7 +167,7 @@ h2 {
         
     }    
 }
-
+/* media query for anything with a max size of 480pixels*/
  @media screen and (max-width:480px) {
     .paragraph { font-size: large;}
     .project { height: 6.25vh;}
